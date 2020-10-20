@@ -10,10 +10,8 @@ import io.cucumber.junit.CucumberOptions;
 		features = "C:\\Users\\Anshu\\git\\CucumberFramework\\Cucumber\\src\\main\\java\\features\\"
 		,glue = {"stepDefinition"}
 		,plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
-		//,plugin = { "pretty", "html:target/cucumber-reports/Cucumber.html" }
-		, monochrome = true
-		//	, dryRun = true
-		, publish = true
+		,monochrome = true
+		,publish = true
 		)
 public class TestRunner {
  
