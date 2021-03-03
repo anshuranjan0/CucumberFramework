@@ -1,24 +1,16 @@
-Feature: Login to the application
+Feature: Page Element validation on DemoQA
 
-Scenario: Login test scenario 
-	Given user is on login page
-	When user enters userID and password
-	Then user clicks on login button
-	
-Scenario Outline: User using scenario outline
-	Given user is on the login page
-	When user enters "<username>" and "<password>"
-	Then user clicks on the login button
-	
-Examples:
-	|username| password|
-	|testUser| testPassword|
-	
+Background: User is on demoQA home page
+	Given user is on demoQA Home Page
 
-Scenario: User is able to use data provider
-	Given user is able to login
-	When user enters username and password
-			|testUser1|testPassword1|
-	Then user clicks on login button
+Scenario: Validate text boxes on demoQA
+	Given user navigates to textbox page
+	When user enters full name and email
+	And user enters current address and permanent address
+	When user clicks on submit button
+	Then validate correct name is displayed
 	
-	
+Scenario: Validate radio button on demoQA
+	Given user navigates to radio button page
+	When user click on Yes radio
+	Then validate yes radio is selected

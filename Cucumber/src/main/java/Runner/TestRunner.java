@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "C:\\Users\\Anshu\\git\\CucumberFramework\\Cucumber\\src\\main\\java\\features\\"
+		features = "C:\\Users\\Admin\\git\\Cucumber_Framework\\Cucumber\\src\\main\\java\\features\\"
 		,glue = {"stepDefinition"}
 		,plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		,monochrome = true
